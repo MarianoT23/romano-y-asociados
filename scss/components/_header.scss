@@ -1,0 +1,27 @@
+$header-height: 80px;
+
+nav {
+    display: flex; justify-content: center;
+    height: $header-height;
+    box-shadow: 0 5px 10px rgba(black, .2);
+
+    .navbar__container {
+        display: flex; justify-content: space-between; align-items: center; 
+    }
+
+    .logo {
+        max-width: 250px;
+    }
+
+    .menu {
+        display: flex;
+
+        li {
+            margin-right: 24px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
