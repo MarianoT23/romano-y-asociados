@@ -12,12 +12,15 @@ body {
   outline: none;
 }
 
+footer,
 section {
   display: flex;
   justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-h1, h2, h4, h4, h5, h6 {
+h1, h2, h3, h4, h4, h5, h6 {
   margin: 0;
 }
 
@@ -43,6 +46,30 @@ ul {
   max-width: 1180px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+h1, h2, h4, h4, h5, h6 {
+  color: #333333;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.section-title {
+  margin-bottom: 25px;
+}
+
+p {
+  color: #333333;
 }
 
 nav {
@@ -122,4 +149,46 @@ nav .menu li:last-child {
   transition: 0.5s ease-in-out;
 }
 
-/*# sourceMappingURL=style.css.map */
+footer {
+  background-color: #202428;
+}
+
+.profesionales__card-container {
+  display: flex;
+  justify-content: space-between;
+}
+.profesionales__card-profesional {
+  position: relative;
+  width: 48%;
+  height: 600px;
+}
+.profesionales__card-profesional--frente, .profesionales__card-profesional--reverso {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.profesionales__card-profesional--frente {
+  opacity: 1;
+}
+.profesionales__card-profesional--reverso {
+  opacity: 1;
+}
+.profesionales__card-img-container {
+  width: 100%;
+  height: 100%;
+}
+.profesionales__card-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profesionales__card-nombre {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+}
+
+/*# sourceMappingURL=styles.css.map */

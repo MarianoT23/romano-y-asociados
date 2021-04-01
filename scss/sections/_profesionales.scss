@@ -1,0 +1,39 @@
+.profesionales {
+
+    &__card-container {
+        display: flex; justify-content: space-between;
+    }
+
+    &__card-profesional {
+        position: relative;
+        width: 48%; height: 600px;
+
+        &--frente,
+        &--reverso {
+            position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+        }
+        
+        &--frente {
+            opacity: 1;
+        }
+
+        &--reverso {
+            opacity: 1;
+        }
+    }
+
+    &__card-img-container {
+        width: 100%; height: 100%;
+
+        img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__card-nombre {
+        position: absolute; bottom: 0; 
+        width: 100%;
+        background-color: black;
+    }
+}

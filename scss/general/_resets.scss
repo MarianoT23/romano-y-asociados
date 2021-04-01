@@ -9,10 +9,12 @@ body {
     font-family: 'Roboto', sans-serif;
     outline: none;
 }
+footer,
 section {
     display: flex; justify-content: center;
+    padding-top: 30px; padding-bottom: 30px;
 }
-h1, h2, h4, h4, h5, h6 {
+h1, h2, h3, h4, h4, h5, h6 {
     margin: 0;
 }
 a,
