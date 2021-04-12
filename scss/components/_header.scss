@@ -1,6 +1,7 @@
 $header-height: 80px;
 
 nav {
+    position: relative; z-index: 20;
     display: flex; justify-content: center;
     height: $header-height;
     box-shadow: 0 5px 10px rgba(black, .2);

@@ -1,5 +1,34 @@
 @use '../general/colors' as *;
 
-footer {
+.contacto {
     background-color: $darkBackground;
+
+    .section-title,
+    a,
+    p {
+        color: white;
+    }
+
+    &__subcontainer {
+        display: flex;
+    }
+
+    &__contact-info,
+    &__direccion {
+        width: 50%;
+    }
+
+    a,
+    p {
+        display: flex; align-items: center;
+        margin-bottom: 12px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__map {
+        width: 100%; height: 400px;
+    }
 }

@@ -18,7 +18,13 @@ h3 {
 }
 
 .section-title {
+    opacity: 0;
     margin-bottom: 25px;
+}
+.aos-animate {
+    .section-title {
+        animation: fadeInUp 1s forwards;
+    }
 }
 
 p {

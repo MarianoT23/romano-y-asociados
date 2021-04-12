@@ -1,4 +1,16 @@
+@use '../general/resets' as *;
+
 .profesionales {
+    padding-bottom: 150px;
+
+    // Load Animation
+    .aos-animate {
+        @for $cardNumber from 1 through 2 {
+            .profesionales__card-profesional:nth-child(#{$cardNumber}) {
+                animation: fadeInUp 1s $cardNumber/4+s forwards;
+            }
+        }
+    }
 
     &__card-container {
         display: flex; justify-content: space-between;
@@ -6,10 +18,14 @@
 
     &__card-profesional {
         position: relative;
+        opacity: 0;
         width: 48%; height: 600px;
+        border-radius: 5px;
+        overflow: hidden;
 
         &--frente,
-        &--reverso {
+        &--reverso,
+        &--overlay {
             position: absolute; top: 0; right: 0; bottom: 0; left: 0;
         }
         
@@ -18,7 +34,29 @@
         }
 
         &--reverso {
-            opacity: 1;
+            opacity: 0;
+            color: white;
+        }
+
+        &--overlay {
+            background-color: rgba(black, .1);
+        }
+
+        &:hover {
+
+            .profesionales__card-profesional--frente {
+                transition: $tranFast;
+            }
+
+            .profesionales__card-profesional--reverso {
+                opacity: 1;
+                transition: $tranFast;
+            }
+
+            .profesionales__card-profesional--reverso {
+                background-color: rgba(black, .7);
+                transition: $tranFast;
+            }
         }
     }
 
@@ -32,8 +70,7 @@
     }
 
     &__card-nombre {
-        position: absolute; bottom: 0; 
+        position: absolute; bottom: -80px; z-index: 10;
         width: 100%;
-        background-color: black;
     }
 }

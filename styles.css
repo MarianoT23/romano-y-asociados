@@ -32,6 +32,8 @@ a:visited {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .container-xl {
@@ -65,14 +67,31 @@ h3 {
 }
 
 .section-title {
+  opacity: 0;
   margin-bottom: 25px;
+}
+
+.aos-animate .section-title {
+  animation: fadeInUp 1s forwards;
 }
 
 p {
   color: #333333;
 }
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 nav {
+  position: relative;
+  z-index: 20;
   display: flex;
   justify-content: center;
   height: 80px;
@@ -149,20 +168,107 @@ nav .menu li:last-child {
   transition: 0.5s ease-in-out;
 }
 
-footer {
-  background-color: #202428;
+.hero {
+  position: relative;
+  background: #DBD084;
+  background-size: cover;
+  height: 60vh;
+}
+.hero__container {
+  display: flex;
 }
 
+.areas-practica .aos-animate .areas-practica__card:nth-child(1) {
+  animation: fadeInUp 1s 0.25s forwards;
+}
+.areas-practica .aos-animate .areas-practica__card:nth-child(2) {
+  animation: fadeInUp 1s 0.5s forwards;
+}
+.areas-practica .aos-animate .areas-practica__card:nth-child(3) {
+  animation: fadeInUp 1s 0.75s forwards;
+}
+.areas-practica .aos-animate .areas-practica__card:nth-child(4) {
+  animation: fadeInUp 1s 1s forwards;
+}
+.areas-practica .aos-animate .areas-practica__card:nth-child(5) {
+  animation: fadeInUp 1s 1.25s forwards;
+}
+.areas-practica .aos-animate .areas-practica__card:nth-child(6) {
+  animation: fadeInUp 1s 1.5s forwards;
+}
+.areas-practica .aos-animate .areas-practica__card:nth-child(7) {
+  animation: fadeInUp 1s 1.75s forwards;
+}
+.areas-practica .aos-animate .areas-practica__card:nth-child(8) {
+  animation: fadeInUp 1s 2s forwards;
+}
+.areas-practica .aos-animate .areas-practica__card:nth-child(9) {
+  animation: fadeInUp 1s 2.25s forwards;
+}
+.areas-practica .aos-animate .areas-practica__card:nth-child(10) {
+  animation: fadeInUp 1s 2.5s forwards;
+}
+.areas-practica__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 150px);
+  gap: 20px;
+}
+.areas-practica__card {
+  position: relative;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+.areas-practica__card--frente, .areas-practica__card--reverso {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+}
+.areas-practica__card--frente {
+  opacity: 1;
+}
+.areas-practica__card--frente h4 {
+  text-align: center;
+}
+.areas-practica__card--reverso {
+  opacity: 0;
+}
+.areas-practica__card:hover .areas-practica__card--frente {
+  opacity: 0;
+}
+.areas-practica__card:hover .areas-practica__card--reverso {
+  opacity: 1;
+}
+
+.profesionales {
+  padding-bottom: 150px;
+}
+.profesionales .aos-animate .profesionales__card-profesional:nth-child(1) {
+  animation: fadeInUp 1s 0.25s forwards;
+}
+.profesionales .aos-animate .profesionales__card-profesional:nth-child(2) {
+  animation: fadeInUp 1s 0.5s forwards;
+}
 .profesionales__card-container {
   display: flex;
   justify-content: space-between;
 }
 .profesionales__card-profesional {
   position: relative;
+  opacity: 0;
   width: 48%;
   height: 600px;
+  border-radius: 5px;
+  overflow: hidden;
 }
-.profesionales__card-profesional--frente, .profesionales__card-profesional--reverso {
+.profesionales__card-profesional--frente, .profesionales__card-profesional--reverso, .profesionales__card-profesional--overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -173,7 +279,22 @@ footer {
   opacity: 1;
 }
 .profesionales__card-profesional--reverso {
+  opacity: 0;
+  color: white;
+}
+.profesionales__card-profesional--overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.profesionales__card-profesional:hover .profesionales__card-profesional--frente {
+  transition: 0.3s linear;
+}
+.profesionales__card-profesional:hover .profesionales__card-profesional--reverso {
   opacity: 1;
+  transition: 0.3s linear;
+}
+.profesionales__card-profesional:hover .profesionales__card-profesional--reverso {
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 0.3s linear;
 }
 .profesionales__card-img-container {
   width: 100%;
@@ -186,9 +307,38 @@ footer {
 }
 .profesionales__card-nombre {
   position: absolute;
-  bottom: 0;
+  bottom: -80px;
+  z-index: 10;
   width: 100%;
-  background-color: black;
+}
+
+.contacto {
+  background-color: #202428;
+}
+.contacto .section-title,
+.contacto a,
+.contacto p {
+  color: white;
+}
+.contacto__subcontainer {
+  display: flex;
+}
+.contacto__contact-info, .contacto__direccion {
+  width: 50%;
+}
+.contacto a,
+.contacto p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.contacto a:last-child,
+.contacto p:last-child {
+  margin-bottom: 0;
+}
+.contacto__map {
+  width: 100%;
+  height: 400px;
 }
 
 /*# sourceMappingURL=styles.css.map */

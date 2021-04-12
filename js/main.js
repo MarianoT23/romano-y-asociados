@@ -26,6 +26,14 @@ hamburgerMenuContainer.addEventListener('click', () => {
     }
 })
 
+// Animate on scroll
+window.addEventListener("load", () => {
+    AOS.init({
+        animatedClassName: 'aos-animate',
+        once: true,
+    });
+});
+
 
 console.timeEnd("JS is loading fine");
 

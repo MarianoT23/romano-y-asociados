@@ -1,0 +1,11 @@
+.hero {
+    position: relative;
+    background: #DBD084;
+    background-size: cover;
+    height: 60vh;
+
+    &__container {
+        display: flex;
+
+    }
+}

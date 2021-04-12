@@ -3,6 +3,7 @@
 }
 html {
     scroll-behavior: smooth;
+    //background-color: #F1F1F1;
 }
 body {
     margin: 0;
@@ -25,4 +26,10 @@ a:visited {
 
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
+$tranFast: .3s linear;
+$tranNormal: .5s linear;
+$tranSlow: 1s linear;
