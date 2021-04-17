@@ -3,6 +3,21 @@
 .contacto {
     background-color: $darkBackground;
 
+    // Load Animation
+    .aos-animate {
+        @for $infoLink from 1 through 3 {
+            .contacto__contact-info > a:nth-child(#{$infoLink}) {
+                animation: fadeInUp 1s $infoLink/4+s forwards;
+            }
+        }
+        .contacto__direccion > p {
+            animation: fadeInUp 1s forwards;
+        }
+        .mapouter {
+            animation: fadeInUp 1s .5s forwards;
+        }
+    }
+
     .section-title,
     a,
     p {
@@ -22,13 +37,24 @@
     p {
         display: flex; align-items: center;
         margin-bottom: 12px;
+        opacity: 0;
 
         &:last-child {
             margin-bottom: 0;
         }
     }
 
+    a {
+        img {
+            margin-right: 12px;
+        }
+    }
+
     &__map {
         width: 100%; height: 400px;
+    }
+
+    .mapouter {
+        opacity: 0;
     }
 }

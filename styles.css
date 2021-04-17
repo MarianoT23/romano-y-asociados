@@ -16,8 +16,8 @@ footer,
 section {
   display: flex;
   justify-content: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 h1, h2, h3, h4, h4, h5, h6 {
@@ -68,7 +68,7 @@ h3 {
 
 .section-title {
   opacity: 0;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 .aos-animate .section-title {
@@ -95,6 +95,7 @@ nav {
   display: flex;
   justify-content: center;
   height: 80px;
+  background-color: #DBD084;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 nav .navbar__container {
@@ -170,12 +171,30 @@ nav .menu li:last-child {
 
 .hero {
   position: relative;
-  background: #DBD084;
+  background-image: url(img/foto-tribunales4.jpg);
   background-size: cover;
+  background-position: center;
   height: 60vh;
+}
+.hero .aos-animate .hero__title {
+  animation: fadeInUp 1s forwards;
+}
+.hero .aos-animate .hero__subtitle {
+  animation: fadeInUp 1s 0.5s forwards;
 }
 .hero__container {
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.hero__header {
+  background-color: rgba(32, 36, 40, 0.3);
+  width: 80%;
+  padding: 2%;
+}
+.hero__title, .hero__subtitle {
+  opacity: 0;
+  color: white;
 }
 
 .areas-practica .aos-animate .areas-practica__card:nth-child(1) {
@@ -277,22 +296,19 @@ nav .menu li:last-child {
 }
 .profesionales__card-profesional--frente {
   opacity: 1;
+  transition: 0.3s linear;
 }
 .profesionales__card-profesional--reverso {
   opacity: 0;
   color: white;
-}
-.profesionales__card-profesional--overlay {
-  background-color: rgba(0, 0, 0, 0.1);
+  padding: 30px;
 }
 .profesionales__card-profesional:hover .profesionales__card-profesional--frente {
+  transform: scale(1.05);
   transition: 0.3s linear;
 }
 .profesionales__card-profesional:hover .profesionales__card-profesional--reverso {
   opacity: 1;
-  transition: 0.3s linear;
-}
-.profesionales__card-profesional:hover .profesionales__card-profesional--reverso {
   background-color: rgba(0, 0, 0, 0.7);
   transition: 0.3s linear;
 }
@@ -305,6 +321,24 @@ nav .menu li:last-child {
   height: 100%;
   object-fit: cover;
 }
+.profesionales__education ul li {
+  margin-bottom: 12px;
+  display: flex;
+}
+.profesionales__education ul li img {
+  margin-right: 12px;
+}
+.profesionales__links {
+  display: flex;
+  margin-top: 50px;
+}
+.profesionales__links a:first-child {
+  margin-right: 24px;
+}
+.profesionales__links a img {
+  width: 75px;
+  height: 75px;
+}
 .profesionales__card-nombre {
   position: absolute;
   bottom: -80px;
@@ -314,6 +348,21 @@ nav .menu li:last-child {
 
 .contacto {
   background-color: #202428;
+}
+.contacto .aos-animate .contacto__contact-info > a:nth-child(1) {
+  animation: fadeInUp 1s 0.25s forwards;
+}
+.contacto .aos-animate .contacto__contact-info > a:nth-child(2) {
+  animation: fadeInUp 1s 0.5s forwards;
+}
+.contacto .aos-animate .contacto__contact-info > a:nth-child(3) {
+  animation: fadeInUp 1s 0.75s forwards;
+}
+.contacto .aos-animate .contacto__direccion > p {
+  animation: fadeInUp 1s forwards;
+}
+.contacto .aos-animate .mapouter {
+  animation: fadeInUp 1s 0.5s forwards;
 }
 .contacto .section-title,
 .contacto a,
@@ -331,14 +380,21 @@ nav .menu li:last-child {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
+  opacity: 0;
 }
 .contacto a:last-child,
 .contacto p:last-child {
   margin-bottom: 0;
 }
+.contacto a img {
+  margin-right: 12px;
+}
 .contacto__map {
   width: 100%;
   height: 400px;
+}
+.contacto .mapouter {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

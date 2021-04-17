@@ -1,11 +1,35 @@
+@use '../general/colors' as *;
+
 .hero {
     position: relative;
-    background: #DBD084;
-    background-size: cover;
+    background-image: url(img/foto-tribunales4.jpg);
+    background-size: cover; background-position: center;
     height: 60vh;
 
-    &__container {
-        display: flex;
+    // Load Animation
+    .aos-animate {
 
+        .hero__title {
+            animation: fadeInUp 1s forwards;
+        }
+        .hero__subtitle {
+            animation: fadeInUp 1s .5s forwards;
+        }
+    }
+
+    &__container {
+        display: flex; justify-content: flex-end; align-items: center;
+    }
+
+    &__header {
+        background-color: rgba($darkBackground, .3);
+        width: 80%;
+        padding: 2%;
+    }
+
+    &__title,
+    &__subtitle {
+        opacity: 0;
+        color: white;
     }
 }

@@ -4,6 +4,7 @@ nav {
     position: relative; z-index: 20;
     display: flex; justify-content: center;
     height: $header-height;
+    background-color: #DBD084;
     box-shadow: 0 5px 10px rgba(black, .2);
 
     .navbar__container {
