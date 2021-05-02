@@ -4,7 +4,7 @@ nav {
     position: relative; z-index: 20;
     display: flex; justify-content: center;
     height: $header-height;
-    background-color: #DBD084;
+    background-color: white;
     box-shadow: 0 5px 10px rgba(black, .2);
 
     .navbar__container {
@@ -19,10 +19,41 @@ nav {
         display: flex;
 
         li {
+            position: relative;
+            font-weight: 500;
             margin-right: 24px;
+            padding-bottom: 4px;
+            text-transform: uppercase;
 
             &:last-child {
                 margin-right: 0;
+            }
+            
+            &:hover {
+
+                a {
+                    color: #DBD084;
+                    transition: 1s;
+
+                    &::after {
+                        transform: scale(1);
+                        transition: 1s;
+                    }                    
+                }
+            }
+
+            a {
+                transition: 1s;
+
+                &::after {
+                    content: '';
+                    position: absolute; bottom: 0; left: 0;
+                    width: 100%; height: 1px;
+                    background-color: #DBD084;
+                    transition: 1s;
+                    transform: scale(0);
+                    transform-origin: center;
+                }
             }
         }
     }

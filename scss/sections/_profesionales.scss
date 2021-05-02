@@ -95,8 +95,17 @@
         }
     }
 
-    &__card-nombre {
-        position: absolute; bottom: -80px; z-index: 10;
+    &__card-nombre-container {
+        position: absolute; bottom: 0px; z-index: 10;
+        display: flex; justify-content: center; align-items: center; 
+        background-color: rgba(black, .7);
         width: 100%;
+        padding: 10px 0;
+        min-height: 88px;
+    }
+
+    &__card-nombre {
+        text-align: center;
+        color: white;
     }
 }
