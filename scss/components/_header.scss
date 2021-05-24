@@ -1,9 +1,9 @@
 $header-height: 80px;
 
 nav {
-    position: relative; z-index: 20;
+    position: absolute; top: 0; left: 0; z-index: 20;
+    width: 100vw; height: $header-height;
     display: flex; justify-content: center;
-    height: $header-height;
     background-color: white;
     box-shadow: 0 5px 10px rgba(black, .2);
 
@@ -39,6 +39,15 @@ nav {
                         transform: scale(1);
                         transition: 1s;
                     }                    
+                }
+            }
+
+            &.active { 
+                a {
+                    color: #DBD084;
+                    &::after {
+                        transform: scale(1);
+                    }    
                 }
             }
 

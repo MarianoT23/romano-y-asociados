@@ -13,7 +13,10 @@ body {
   outline: none;
 }
 
-footer,
+main {
+  height: 100vh;
+}
+
 section {
   display: flex;
   justify-content: center;
@@ -91,11 +94,14 @@ p {
   }
 }
 nav {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 20;
+  width: 100vw;
+  height: 80px;
   display: flex;
   justify-content: center;
-  height: 80px;
   background-color: white;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -127,6 +133,12 @@ nav .menu li:hover a {
 nav .menu li:hover a::after {
   transform: scale(1);
   transition: 1s;
+}
+nav .menu li.active a {
+  color: #DBD084;
+}
+nav .menu li.active a::after {
+  transform: scale(1);
 }
 nav .menu li a {
   transition: 1s;
@@ -197,6 +209,16 @@ nav .menu li a::after {
   transition: 0.5s ease-in-out;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  width: 100vw;
+  height: 30px;
+  background-color: red;
+}
+
 .hero {
   position: relative;
   background-image: url(img/foto-tribunales4.jpg);
@@ -204,10 +226,10 @@ nav .menu li a::after {
   background-position: center;
   height: 60vh;
 }
-.hero .aos-animate .hero__title {
+.hero .hero__title {
   animation: fadeInUp 1s forwards;
 }
-.hero .aos-animate .hero__subtitle {
+.hero .hero__subtitle {
   animation: fadeInUp 1s 0.5s forwards;
 }
 .hero__container {
@@ -225,34 +247,45 @@ nav .menu li a::after {
   color: white;
 }
 
-.areas-practica .aos-animate .areas-practica__card:nth-child(1) {
+.home__ctas {
+  display: flex;
+  height: 40vh;
+}
+.home__ctas > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.areas-practica .areas-practica__card:nth-child(1) {
   animation: fadeInUp 1s 0.25s forwards;
 }
-.areas-practica .aos-animate .areas-practica__card:nth-child(2) {
+.areas-practica .areas-practica__card:nth-child(2) {
   animation: fadeInUp 1s 0.5s forwards;
 }
-.areas-practica .aos-animate .areas-practica__card:nth-child(3) {
+.areas-practica .areas-practica__card:nth-child(3) {
   animation: fadeInUp 1s 0.75s forwards;
 }
-.areas-practica .aos-animate .areas-practica__card:nth-child(4) {
+.areas-practica .areas-practica__card:nth-child(4) {
   animation: fadeInUp 1s 1s forwards;
 }
-.areas-practica .aos-animate .areas-practica__card:nth-child(5) {
+.areas-practica .areas-practica__card:nth-child(5) {
   animation: fadeInUp 1s 1.25s forwards;
 }
-.areas-practica .aos-animate .areas-practica__card:nth-child(6) {
+.areas-practica .areas-practica__card:nth-child(6) {
   animation: fadeInUp 1s 1.5s forwards;
 }
-.areas-practica .aos-animate .areas-practica__card:nth-child(7) {
+.areas-practica .areas-practica__card:nth-child(7) {
   animation: fadeInUp 1s 1.75s forwards;
 }
-.areas-practica .aos-animate .areas-practica__card:nth-child(8) {
+.areas-practica .areas-practica__card:nth-child(8) {
   animation: fadeInUp 1s 2s forwards;
 }
-.areas-practica .aos-animate .areas-practica__card:nth-child(9) {
+.areas-practica .areas-practica__card:nth-child(9) {
   animation: fadeInUp 1s 2.25s forwards;
 }
-.areas-practica .aos-animate .areas-practica__card:nth-child(10) {
+.areas-practica .areas-practica__card:nth-child(10) {
   animation: fadeInUp 1s 2.5s forwards;
 }
 .areas-practica__grid {
@@ -298,10 +331,10 @@ nav .menu li a::after {
 .profesionales {
   padding-bottom: 150px;
 }
-.profesionales .aos-animate .profesionales__card-profesional:nth-child(1) {
+.profesionales .profesionales__card-profesional:nth-child(1) {
   animation: fadeInUp 1s 0.25s forwards;
 }
-.profesionales .aos-animate .profesionales__card-profesional:nth-child(2) {
+.profesionales .profesionales__card-profesional:nth-child(2) {
   animation: fadeInUp 1s 0.5s forwards;
 }
 .profesionales__card-container {
@@ -387,20 +420,23 @@ nav .menu li a::after {
 
 .contacto {
   background-color: #202428;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
-.contacto .aos-animate .contacto__contact-info > a:nth-child(1) {
+.contacto .contacto__contact-info > a:nth-child(1) {
   animation: fadeInUp 1s 0.25s forwards;
 }
-.contacto .aos-animate .contacto__contact-info > a:nth-child(2) {
+.contacto .contacto__contact-info > a:nth-child(2) {
   animation: fadeInUp 1s 0.5s forwards;
 }
-.contacto .aos-animate .contacto__contact-info > a:nth-child(3) {
+.contacto .contacto__contact-info > a:nth-child(3) {
   animation: fadeInUp 1s 0.75s forwards;
 }
-.contacto .aos-animate .contacto__direccion > p {
+.contacto .contacto__direccion > p {
   animation: fadeInUp 1s forwards;
 }
-.contacto .aos-animate .mapouter {
+.contacto .mapouter {
   animation: fadeInUp 1s 0.5s forwards;
 }
 .contacto .section-title,

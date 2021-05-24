@@ -1,11 +1,9 @@
 .areas-practica {
 
     // Load Animation
-    .aos-animate {
-        @for $cardNumber from 1 through 10 {
-            .areas-practica__card:nth-child(#{$cardNumber}) {
-                animation: fadeInUp 1s $cardNumber/4+s forwards;
-            }
+    @for $cardNumber from 1 through 10 {
+        .areas-practica__card:nth-child(#{$cardNumber}) {
+            animation: fadeInUp 1s $cardNumber/4+s forwards;
         }
     }
 

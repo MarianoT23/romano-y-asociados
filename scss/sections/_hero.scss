@@ -7,16 +7,13 @@
     height: 60vh;
 
     // Load Animation
-    .aos-animate {
-
-        .hero__title {
-            animation: fadeInUp 1s forwards;
-        }
-        .hero__subtitle {
-            animation: fadeInUp 1s .5s forwards;
-        }
+    .hero__title {
+        animation: fadeInUp 1s forwards;
     }
-
+    .hero__subtitle {
+        animation: fadeInUp 1s .5s forwards;
+    }
+    
     &__container {
         display: flex; justify-content: flex-end; align-items: center;
     }

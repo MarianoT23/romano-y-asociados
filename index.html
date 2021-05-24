@@ -2,295 +2,59 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Estudio Romano y Asociados</title>
-    <meta name="title" content="Estudio Romano y Asociados"/>
-    <meta name="description" content="Seriedad, compromiso y experiencia. Más de 45 años de trayectoria en la ciudad de Don Torcuato."/>
-    <meta name="author" content="Mariano Timistit - www.marianotimistit.com.ar"/>
-    <meta name="copyright" content="Estudio Romano y Asociados"/>
 
-    <!-- JS -->
-    <script async defer src="js/aos.js"></script>
     <script async defer src="js/main.js"></script>
-    
+    <script async defer src="js/anime.min.js"></script>
+
 </head>
 
-<body>
-    
-    <!-- Navbar -->
-    <nav id="js-nav">
+<body data-barba="wrapper"> 
 
-        <div class="navbar__container container-xl">
+    <!-- Dynamic - Barba -->
+    <main data-barba="container" data-barba-namespace="inicio">
 
-            <!-- Logo -->
-            <div class="logo">
-                <img src="img/logo.png" alt="Logo Estudios Romano y Asociados" class="logo">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero__container container-lg" data-aos="animate">
+                <div class="hero__header">
+                    <h1 class="hero__title">Estudio Romano y Asociados</h1>
+                    <h2 class="hero__subtitle">Seriedad, compromiso y experiencia. Más de 45 años de trayectoria en la ciudad de Don Torcuato.</h2>
+                </div>         
             </div>
+        </section>
 
-            <!-- Navbar Menu -->
-            <ul class="menu">
-                <li><a href="#areas-practica">Áreas de práctica</a></li>
-                <li><a href="#profesionales">Profesionales</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+        <!-- CTA's -->
+        <section class="home__ctas">
 
-            <!-- Hamburger Menu -->
-            <div class="hamburger-menu__container" id="js-hambuerger-menu-container">
-                <div class="hamburger-menu__lines" id="js-hambuerger-menu-lines">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+            <!-- Profesionales -->
+            <a href="profesionales.html" class="home__profesionales-cta">
+                PROFESIONALES
+            </a>
 
-        </div>
+            <!-- Áreas Práctica -->
+            <a href="areas-practica.html" class="home__areas-practica-cta">
+                ÁREAS DE PRÁCTICA
+            </a>
 
-    </nav>
+            <!-- Contacto -->
+            <a href="contacto.html" class="home__contacto-cta">
+                CONTACTO
+            </a>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero__container container-lg" data-aos="animate">
-            <div class="hero__header">
-                <h1 class="hero__title">Estudio Romano y Asociados</h1>
-                <h2 class="hero__subtitle">Seriedad, compromiso y experiencia. Más de 45 años de trayectoria en la ciudad de Don Torcuato.</h2>
-            </div>         
-        </div>
-    </section>
+        </section>
 
-    <!-- Áreas de Práctica -->
-    <section class="areas-practica" id="areas-practica">
-        <div class="areas-practica__container container-lg" data-aos="animate">
-            <h2 class="section-title">Áres de práctica</h2>
-            <div class="areas-practica__grid">
-                <!-- Area -->
-                <div class="areas-practica__card">
-                    <div class="areas-practica__card--frente">
-                        <h4>Derecho de familia y sucesiones.</h4>
-                    </div>
-                    <div class="areas-practica__card--reverso">
-                        <ul>
-                            <li>Divorcios</li>
-                            <li>Filiaciones</li>
-                            <li>Alimentos</li>
-                            <li>Nulidades matrimoniales</li>
-                            <li>División de sociedad conyugal</li>
-                            <li>Adopciones</li>
-                            <li>Convenios prenupciales</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Areas -->
-                <div class="areas-practica__card">
-                    <div class="areas-practica__card--frente">
-                        <h4>Derecho civil y comercial</h4>
-                    </div>
-                    <div class="areas-practica__card--reverso"></div>
-                </div>
-                <!-- Areas -->
-                <div class="areas-practica__card">
-                    <div class="areas-practica__card--frente">
-                        <h4>Derecho del trabajo</h4>
-                    </div>
-                    <div class="areas-practica__card--reverso">
-                        <ul>
-                            <li>despidos</li>
-                            <li>accidentes laborales</li>
-                            <li>discriminación</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Areas -->
-                <div class="areas-practica__card">
-                    <div class="areas-practica__card--frente">
-                        <h4>Derecho de salud</h4>
-                    </div>
-                    <div class="areas-practica__card--reverso">
-                        <ul>
-                            <li>amparos de salud</li>
-                            <li>discapacidad</li>
-                            <li>cobertura de prestaciones</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Areas -->
-                <div class="areas-practica__card">
-                    <div class="areas-practica__card--frente">
-                        <h4>Contratos</h4>
-                    </div>
-                    <div class="areas-practica__card--reverso">
-                        <ul>
-                            <li>civiles</li>
-                            <li>comerciales</li>
-                            <li>administrativos</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Areas -->
-                <div class="areas-practica__card">
-                    <div class="areas-practica__card--frente">
-                        <h4>Derecho de daños</h4>
-                    </div>
-                    <div class="areas-practica__card--reverso">
-                        <ul>
-                            <li>accidentes</li>
-                            <li>daños y perjuicios</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Areas -->
-                <div class="areas-practica__card">
-                    <div class="areas-practica__card--frente">
-                        <h4>Derecho Reales</h4>
-                    </div>
-                    <div class="areas-practica__card--reverso">
-                        <ul>
-                            <li>compraventas</li>
-                            <li>comodatos</li>
-                            <li>usufructos</li>
-                            <li>donaciones</li>
-                            <li>desarrollos inmobiliarios</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Areas -->
-                <div class="areas-practica__card">
-                    <div class="areas-practica__card--frente">
-                        <h4>Derecho Administrativo</h4>
-                    </div>
-                    <div class="areas-practica__card--reverso">
-                        <ul>
-                            <li>reclamos y recursos administrativos</li>
-                            <li>procesos contencioso administrativos</li>
-                            <li>derecho municipal</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Areas -->
-                <div class="areas-practica__card">
-                    <div class="areas-practica__card--frente">
-                        <h4>Actividades Reguladas</h4>
-                    </div>
-                    <div class="areas-practica__card--reverso">
-                        <ul>
-                            <li>servicios públicos</li>
-                            <li>actividades en competencia</li>
-                            <li>obra pública</li>
-                            <li>concesiones</li>
-                            <li>iniciativas privadas</li>
-                            <li>contratos de participación público privada</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Areas -->
-                <div class="areas-practica__card">
-                    <div class="areas-practica__card--frente">
-                        <h4>defensa del consumidor</h4>
-                    </div>
-                    <div class="areas-practica__card--reverso">
-                        <ul>
-                            <li>reclamos ante autoridades de defensa del consumidor</li>
-                            <li>procesos colectivos</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </main>
 
-    <!-- Profesionales -->
-    <section class="profesionales" id="profesionales">
-        <div class="profesionales__container container-lg" data-aos="animate">
-
-            <!-- Título Sección-->
-            <h2 class="section-title">Profesionales</h2>
-
-            <!-- Cards Profesionales -->
-            <div class="profesionales__card-container">
-                <!-- Elena -->
-                <div class="profesionales__card-profesional">
-                    <div class="profesionales__card-profesional--frente">
-                        <div class="profesionales__card-img-container">
-                            <img src="img/perfil/ECR.jpeg" alt="Elena Concepción Romano">          
-                        </div>
-                    </div>
-                    <div class="profesionales__card-profesional--reverso">
-                        <div class="profesionales__education">
-                            <ul>
-                                <li> <img src="img/icons/paper.svg" alt="Paper Icon"> Posgrado en Alta Dirección en Turismo Rural. Facultad de Agronomía (UBA) 2002.</li>
-                                <li> <img src="img/icons/school-hat.svg" alt="University Icon"> Abogada y Procuradora, Facultad de Derecho y Ciencias Jurídicas (UBA) 1983.</li>
-                                <li> <img src="img/icons/school.svg" alt="School Icon"> Bachiller con Orientación Pedagógica, Instituto Nuestra Señora de la Compasión, San Miguel, PBA 1970.</li>
-                            </ul>
-                        </div>
-                        <div class="profesionales__links">
-                            <a href="https://www.linkedin.com/in/elena-romano-de-lago-rodriguez-a7371969/" target="_blank" class="profesionale__linkedin">
-                                <img src="img/icons/linkedin.svg" alt="Linkedin Elena Concepción Romano">
-                            </a>
-                            <a href="cvs/CV Dra. Elena C. Romano.pdf" target="_blank" class="profesionales__cv">
-                                <img src="img/icons/cv.svg" alt="CV Elena Concepción Romano">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="profesionales__card-nombre-container">
-                        <h3 class="profesionales__card-nombre">Elena Concepción Romano</h3>  
-                    </div>
-                </div>
-                <!-- José -->
-                <div class="profesionales__card-profesional">
-                    <div class="profesionales__card-profesional--frente">
-                        <div class="profesionales__card-img-container">
-                            <img src="img/perfil/JFLR.jpeg" alt="José Francisco Lago Rodríguez Romano">
-                        </div>
-                    </div>
-                    <div class="profesionales__card-profesional--reverso">
-                        <div class="profesionales__education">
-                            <ul>
-                                <li> <img src="img/icons/paper.svg" alt="Paper Icon"> Universidad Austral: Maestría en Derecho Administrativo (2016-2017). Tesis: “Las prerrogativas contractuales de la Administración y sus particularidades en los Contratos PPP” dirigida por Ana Patricia Guglielminetti.</li>
-                                <li> <img src="img/icons/paper.svg" alt="Paper Icon"> Universidad Austral. Diplomatura en Contratos del Estado e Infraestructura Pública (2015). Trabajo final: “Infraestructura logística: un motor para el desarrollo nacional”.</li>
-                                <li> <img src="img/icons/school-hat.svg" alt="University Icon"> Universidad Austral. Abogado (2011- 2015). </li>
-                                <li> <img src="img/icons/school.svg" alt="School Icon"> St. George´s College North. Bachiller Internacional (1998 – 2010) Graduado con honores.</li>
-                            </ul>
-                        </div>
-                        <div class="profesionales__links">
-                            <a href="https://www.linkedin.com/in/jos%C3%A9-francisco-lago-rodr%C3%ADguez-81514b6a/" target="_blank">
-                                <img src="img/icons/linkedin.svg" alt="Linkedin José Fransico Lago Romano">
-                            </a>
-                            <a href="cvs/CV José Francisco Lago Rodríguez.pdf" target="_blank" class="profesionales__cv">
-                                <img src="img/icons/cv.svg" alt="CV José Fransico Lago Romano">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="profesionales__card-nombre-container">
-                        <h3 class="profesionales__card-nombre">José Francisco Lago Rodríguez Romano</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contacto -->
-    <footer class="contacto" id="contacto">
-        <div class="contacto__container container-lg" data-aos="animate">
-            <h2 class="section-title">Contacto</h2>
-            <div class="contacto__subcontainer">
-                <div class="contacto__contact-info">
-                    <a href="tel:47415192"><img src="img/icons/phone.svg" alt="Phone"> 4741-5192</a>
-                    <a href="tel:1147415192"><img src="img/icons/whatsapp.svg" alt="Whatsapp"> 11-4741-5192</a>
-                    <a href="mailto:eromanoabogados@gmail.com"><img src="img/icons/email.svg" alt="Email"> eromanoabogados@gmail.com</a>
-                </div>
-                <div class="contacto__direccion">
-                    <p><img src="img/icons/location.svg" alt="Location Pin">Av. Alvear (Ruta 202) n° 793, piso 1 “A”, Don Torcuato.</p> 
-                    <!-- Embeded Map-->
-                    <div class="mapouter"><div class="gmap_canvas">
-                        <iframe width="100%" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.%20%C3%81ngel%20T.%20de%20Alvear%20793&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <footer>
+        Footer
     </footer>
+        
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
 
 </body>
 

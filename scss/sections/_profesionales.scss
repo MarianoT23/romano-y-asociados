@@ -4,13 +4,12 @@
     padding-bottom: 150px;
 
     // Load Animation
-    .aos-animate {
-        @for $cardNumber from 1 through 2 {
-            .profesionales__card-profesional:nth-child(#{$cardNumber}) {
-                animation: fadeInUp 1s $cardNumber/4+s forwards;
-            }
+    @for $cardNumber from 1 through 2 {
+        .profesionales__card-profesional:nth-child(#{$cardNumber}) {
+            animation: fadeInUp 1s $cardNumber/4+s forwards;
         }
     }
+    
 
     &__card-container {
         display: flex; justify-content: space-between;

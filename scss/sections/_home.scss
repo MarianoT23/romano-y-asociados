@@ -1,0 +1,12 @@
+.home {
+
+    &__ctas {
+        display: flex;
+        height: 40vh;
+
+        & > a {
+            display: flex; justify-content: center; align-items: center;
+            width: 100%;
+        }
+    }
+}

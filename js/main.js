@@ -1,17 +1,17 @@
 console.time('JS is loading fine')
 
 
-// Navbar Active
+/* Navbar Active
 document.addEventListener('scroll', function() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById('js-nav').classList.add('active')
     } else {
         document.getElementById('js-nav').classList.remove('active')
     }
-})
+})*/
 
 
-// Hamburger Menu
+/* Hamburger Menu
 const hamburgerMenuContainer = document.getElementById('js-hambuerger-menu-container')
 const hamburgerMenuLines = document.getElementById('js-hambuerger-menu-lines')
 const navbarMenuContainer = document.getElementById('js-navbar-menu-container')
@@ -24,15 +24,26 @@ hamburgerMenuContainer.addEventListener('click', () => {
         hamburgerMenuLines.classList.add('open')
         navbarMenuContainer.classList.add('active')
     }
-})
+})*/
 
-// Animate on scroll
-window.addEventListener("load", () => {
-    AOS.init({
-        animatedClassName: 'aos-animate',
-        once: true,
-    });
-});
+// Barba
+barba.init({
+    transitions: [{
+      name: 'opacity-transition',
+      leave() {
+        anime({
+            targets: '.anime-js',
+            translateX: 1000
+          });
+      },
+      enter() {
+        anime({
+            targets: '.anime-js',
+            translateX: 1000
+          });
+      }
+    }]
+  });
 
 
 console.timeEnd("JS is loading fine");
