@@ -1,5 +1,4 @@
-$textBlack: rgb(51, 51, 51);
-$textWhite: white;
+@use '../general/colors' as *;
 
 h1, h2, h4, h4, h5, h6 {
     color: $textBlack;
@@ -17,6 +16,14 @@ h3 {
     font-size: 30px;
 }
 
+p {
+    color: $textBlack;
+}
+
+li {
+    color: $textBlack;
+}
+
 .section-title {
     opacity: 0;
     margin-bottom: 40px;
@@ -27,6 +34,3 @@ h3 {
     }
 }
 
-p {
-    color: $textBlack;
-}

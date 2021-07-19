@@ -1,12 +1,35 @@
+@use '../general/colors' as *;
+
 .home {
 
     &__ctas {
-        display: flex;
+        background-color: $whiteBackground;
         height: 40vh;
+        padding: 0;
 
-        & > a {
-            display: flex; justify-content: center; align-items: center;
-            width: 100%;
+        .home__ctas-container {
+            display: flex; justify-content: space-between;
+        }
+
+        a {
+            position: relative; z-index: 100;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            width: 32%; height: 250px;
+            background-color: $whiteBackground;
+            box-shadow: 0 0 15px rgba(black, .5);
+            margin-top: -50px;
+
+            img {
+                width: 70px; height: auto;
+                margin-bottom: 30px;
+            }
+
+            h2 {
+                font-size: 28px;
+                letter-spacing: 1px;
+                color: $textBlack;
+            }
         }
     }
 }
+

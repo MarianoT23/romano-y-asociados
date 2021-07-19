@@ -15,14 +15,47 @@
 
 <body data-barba="wrapper"> 
 
+    <!-- Navbar -->
+    <nav>
+
+        <div class="navbar__container container-xl">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="img/logo--color.png" alt="Logo Estudios Romano y Asociados" class="logo">
+            </a>
+
+            <!-- Navbar Menu -->
+            <ul class="menu">
+                <li id="js-profesionales"><a href="profesionales.html">Profesionales</a></li>
+                <li id="js-areas-practica"><a href="areas-practica.html">Áreas de práctica</a></li>
+                <li id="js-contacto"><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+            <!-- Hamburger Menu -->
+            <div class="hamburger-menu__container" id="js-hambuerger-menu-container">
+                <div class="hamburger-menu__lines" id="js-hambuerger-menu-lines">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
     <!-- Dynamic - Barba -->
     <main data-barba="container" data-barba-namespace="inicio">
 
         <!-- Hero -->
         <section class="hero">
             <div class="hero__container container-lg" data-aos="animate">
+
+                <div class="hero__mask"></div>
+
                 <div class="hero__header">
-                    <h1 class="hero__title">Estudio Romano y Asociados</h1>
+                    <h1 class="hero__title">Estudio Jurídico <br> Romano y Asociados</h1>
                     <h2 class="hero__subtitle">Seriedad, compromiso y experiencia. Más de 45 años de trayectoria en la ciudad de Don Torcuato.</h2>
                 </div>         
             </div>
@@ -31,31 +64,34 @@
         <!-- CTA's -->
         <section class="home__ctas">
 
-            <!-- Profesionales -->
-            <a href="profesionales.html" class="home__profesionales-cta">
-                PROFESIONALES
-            </a>
+            <div class="home__ctas-container container-lg">
 
-            <!-- Áreas Práctica -->
-            <a href="areas-practica.html" class="home__areas-practica-cta">
-                ÁREAS DE PRÁCTICA
-            </a>
+                <!-- Profesionales -->
+                <a href="profesionales.html" class="home__profesionales-cta">
+                    <img src="img/icons/law-gravel.svg" alt="Icono Profesionales">
+                    <h2>PROFESIONALES</h2>
+                </a>
 
-            <!-- Contacto -->
-            <a href="contacto.html" class="home__contacto-cta">
-                CONTACTO
-            </a>
+                <!-- Áreas Práctica -->
+                <a href="areas-practica.html" class="home__areas-practica-cta">
+                    <img src="img/icons/justice-scale.svg" alt="Icono Áreas de Práctica">
+                    <h2>ÁREAS DE PRÁCTICA</h2>
+                </a>
+
+                <!-- Contacto -->
+                <a href="contacto.html" class="home__contacto-cta">
+                    <img src="img/icons/email.svg" alt=" Icono Contacto">
+                    <h2>CONTACTO</h2>
+                </a>
+
+            </div>
 
         </section>
 
     </main>
 
-    <footer>
-        Footer
-    </footer>
-        
     <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
-
+        
 </body>
 
 </html>

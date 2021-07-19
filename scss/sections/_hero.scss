@@ -1,17 +1,25 @@
 @use '../general/colors' as *;
 
 .hero {
-    position: relative;
+    position: relative; z-index: 100;
     background-image: url(img/foto-tribunales4.jpg);
     background-size: cover; background-position: center;
     height: 60vh;
 
-    // Load Animation
-    .hero__title {
-        animation: fadeInUp 1s forwards;
+    &__mask {
+        position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .5) 100%);
     }
-    .hero__subtitle {
+
+    // Load Animation
+    &__title {
+        animation: fadeInUp 1s forwards;
+        color: $gold;
+        margin-bottom: 20px;
+    }
+    &__subtitle {
         animation: fadeInUp 1s .5s forwards;
+        color: $textWhite;
     }
     
     &__container {
@@ -27,6 +35,5 @@
     &__title,
     &__subtitle {
         opacity: 0;
-        color: white;
     }
 }

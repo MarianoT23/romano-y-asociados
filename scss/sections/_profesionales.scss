@@ -1,66 +1,38 @@
 @use '../general/resets' as *;
+@use '../general/colors' as *;
 
 .profesionales {
-    padding-bottom: 150px;
-
-    // Load Animation
-    @for $cardNumber from 1 through 2 {
-        .profesionales__card-profesional:nth-child(#{$cardNumber}) {
-            animation: fadeInUp 1s $cardNumber/4+s forwards;
-        }
-    }
-    
+    background-color: $whiteBackground;
+    height: 100%;
+    padding-top: 30px; padding-bottom: 30px;
 
     &__card-container {
-        display: flex; justify-content: space-between;
+        display: flex; flex-direction: column; justify-content: space-between;
     }
 
     &__card-profesional {
         position: relative;
-        opacity: 0;
-        width: 48%; height: 600px;
+        width: 100%; height: 40vh;
+        display: flex; justify-content: space-between;
         border-radius: 5px;
-        overflow: hidden;
 
-        &--frente,
-        &--reverso,
-        &--overlay {
-            position: absolute; top: 0; right: 0; bottom: 0; left: 0;
-        }
-        
-        &--frente {
-            opacity: 1;
-            transition: $tranFast;
-        }
-
-        &--reverso {
-            opacity: 0;
-            color: white;
-            padding: 30px;
-        }
-
-        &:hover {
-
-            .profesionales__card-profesional--frente {
-                transform: scale(1.05);
-                transition: $tranFast;
-            }
-
-            .profesionales__card-profesional--reverso {
-                opacity: 1;
-                background-color: rgba(black, .7);
-                transition: $tranFast;
-            }
+        &:first-child {
+            margin-bottom: 40px;
         }
     }
 
     &__card-img-container {
-        width: 100%; height: 100%;
+        width: 30%; height: 100%;
+        box-shadow: 3px 3px 15px rgba(black, .5);
 
         img {
             width: 100%; height: 100%;
             object-fit: cover;
         }
+    }
+
+    &__content-container {
+        width: 65%;
     }
 
     &__education {
@@ -83,28 +55,21 @@
         margin-top: 50px;
 
         a {
+            font-weight: 500;
+            display: flex; align-items: center;
     
             &:first-child {
                 margin-right: 24px;
             }
 
             img {
-                width: 75px; height: 75px;
+                width: 35px; height: 35px;
+                margin-right: 12px;
             }
         }
     }
 
-    &__card-nombre-container {
-        position: absolute; bottom: 0px; z-index: 10;
-        display: flex; justify-content: center; align-items: center; 
-        background-color: rgba(black, .7);
-        width: 100%;
-        padding: 10px 0;
-        min-height: 88px;
-    }
-
     &__card-nombre {
-        text-align: center;
-        color: white;
+        margin-bottom: 22px;
     }
 }

@@ -15,38 +15,8 @@
 
 <body data-barba="wrapper"> 
 
-    <!-- Navbar -->
-    <nav id="js-nav">
-
-        <div class="navbar__container container-xl">
-
-            <!-- Logo -->
-            <a href="index.html" class="logo">
-                <img src="img/logo.png" alt="Logo Estudios Romano y Asociados" class="logo">
-            </a>
-
-            <!-- Navbar Menu -->
-            <ul class="menu">
-                <li class="active"><a href="#">Áreas de práctica</a></li>
-                <li><a href="profesionales.html">Profesionales</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-
-            <!-- Hamburger Menu -->
-            <div class="hamburger-menu__container" id="js-hambuerger-menu-container">
-                <div class="hamburger-menu__lines" id="js-hambuerger-menu-lines">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-
-        </div>
-
-    </nav>
-
     <!-- Dynamic - Barba -->
-    <main data-barba="container" data-barba-namespace="inicio">
+    <main data-barba="container" data-barba-namespace="areas-practica">
 
         <!-- Áreas de Práctica -->
         <section class="areas-practica" id="areas-practica">
@@ -55,143 +25,104 @@
                 <div class="areas-practica__grid">
                     <!-- Area -->
                     <div class="areas-practica__card">
-                        <div class="areas-practica__card--frente">
-                            <h4>Derecho de familia y sucesiones.</h4>
-                        </div>
-                        <div class="areas-practica__card--reverso">
-                            <ul>
-                                <li>Divorcios</li>
-                                <li>Filiaciones</li>
-                                <li>Alimentos</li>
-                                <li>Nulidades matrimoniales</li>
-                                <li>División de sociedad conyugal</li>
-                                <li>Adopciones</li>
-                                <li>Convenios prenupciales</li>
-                            </ul>
-                        </div>
+                        <h4 class="areas-practica__card-title">Derecho de familia y sucesiones.</h4>
+                        <ul class="areas-practica__card-list">
+                            <li>Divorcios</li>
+                            <li>Filiaciones</li>
+                            <li>Alimentos</li>
+                            <li>Nulidades matrimoniales</li>
+                            <li>División de sociedad conyugal</li>
+                            <li>Adopciones</li>
+                            <li>Convenios prenupciales</li>
+                        </ul>
                     </div>
                     <!-- Areas -->
                     <div class="areas-practica__card">
-                        <div class="areas-practica__card--frente">
-                            <h4>Derecho civil y comercial</h4>
-                        </div>
-                        <div class="areas-practica__card--reverso"></div>
+                        <h4 class="areas-practica__card-title">Derecho civil y comercial</h4>
                     </div>
                     <!-- Areas -->
                     <div class="areas-practica__card">
-                        <div class="areas-practica__card--frente">
-                            <h4>Derecho del trabajo</h4>
-                        </div>
-                        <div class="areas-practica__card--reverso">
-                            <ul>
-                                <li>despidos</li>
-                                <li>accidentes laborales</li>
-                                <li>discriminación</li>
-                            </ul>
-                        </div>
+                        <h4 class="areas-practica__card-title">Derecho del trabajo</h4>
+                        <ul class="areas-practica__card-list">
+                            <li>Despidos</li>
+                            <li>Accidentes laborales</li>
+                            <li>Discriminación</li>
+                        </ul>
                     </div>
                     <!-- Areas -->
                     <div class="areas-practica__card">
-                        <div class="areas-practica__card--frente">
-                            <h4>Derecho de salud</h4>
-                        </div>
-                        <div class="areas-practica__card--reverso">
-                            <ul>
-                                <li>amparos de salud</li>
-                                <li>discapacidad</li>
-                                <li>cobertura de prestaciones</li>
-                            </ul>
-                        </div>
+                        <h4 class="areas-practica__card-title">Derecho de salud</h4>
+                        <ul class="areas-practica__card-list">
+                            <li>Amparos de salud</li>
+                            <li>Discapacidad</li>
+                            <li>Cobertura de prestaciones</li>
+                        </ul>
                     </div>
                     <!-- Areas -->
                     <div class="areas-practica__card">
-                        <div class="areas-practica__card--frente">
-                            <h4>Contratos</h4>
-                        </div>
-                        <div class="areas-practica__card--reverso">
-                            <ul>
-                                <li>civiles</li>
-                                <li>comerciales</li>
-                                <li>administrativos</li>
-                            </ul>
-                        </div>
+                        <h4 class="areas-practica__card-title">Contratos</h4>
+                        <ul class="areas-practica__card-list">
+                            <li>Civiles</li>
+                            <li>Comerciales</li>
+                            <li>Administrativos</li>
+                        </ul>
                     </div>
                     <!-- Areas -->
                     <div class="areas-practica__card">
-                        <div class="areas-practica__card--frente">
-                            <h4>Derecho de daños</h4>
-                        </div>
-                        <div class="areas-practica__card--reverso">
-                            <ul>
-                                <li>accidentes</li>
-                                <li>daños y perjuicios</li>
-                            </ul>
-                        </div>
+                        <h4 class="areas-practica__card-title">Derecho de daños</h4>
+                        <ul class="areas-practica__card-list">
+                            <li>Accidentes</li>
+                            <li>Daños y perjuicios</li>
+                        </ul>
                     </div>
                     <!-- Areas -->
                     <div class="areas-practica__card">
-                        <div class="areas-practica__card--frente">
-                            <h4>Derecho Reales</h4>
-                        </div>
-                        <div class="areas-practica__card--reverso">
-                            <ul>
-                                <li>compraventas</li>
-                                <li>comodatos</li>
-                                <li>usufructos</li>
-                                <li>donaciones</li>
-                                <li>desarrollos inmobiliarios</li>
-                            </ul>
-                        </div>
+                        <h4 class="areas-practica__card-title">Derecho Reales</h4>
+                        <ul class="areas-practica__card-list">
+                            <li>Compraventas</li>
+                            <li>Comodatos</li>
+                            <li>Usufructos</li>
+                            <li>Donaciones</li>
+                            <li>Desarrollos inmobiliarios</li>
+                        </ul>
                     </div>
                     <!-- Areas -->
                     <div class="areas-practica__card">
-                        <div class="areas-practica__card--frente">
-                            <h4>Derecho Administrativo</h4>
-                        </div>
-                        <div class="areas-practica__card--reverso">
-                            <ul>
-                                <li>reclamos y recursos administrativos</li>
-                                <li>procesos contencioso administrativos</li>
-                                <li>derecho municipal</li>
-                            </ul>
-                        </div>
+                        <h4 class="areas-practica__card-title">Derecho Administrativo</h4>
+                        <ul class="areas-practica__card-list">
+                            <li>Reclamos y recursos administrativos</li>
+                            <li>Procesos contencioso administrativos</li>
+                            <li>Derecho municipal</li>
+                        </ul>
                     </div>
                     <!-- Areas -->
                     <div class="areas-practica__card">
-                        <div class="areas-practica__card--frente">
-                            <h4>Actividades Reguladas</h4>
-                        </div>
-                        <div class="areas-practica__card--reverso">
-                            <ul>
-                                <li>servicios públicos</li>
-                                <li>actividades en competencia</li>
-                                <li>obra pública</li>
-                                <li>concesiones</li>
-                                <li>iniciativas privadas</li>
-                                <li>contratos de participación público privada</li>
-                            </ul>
-                        </div>
+                        <h4 class="areas-practica__card-title">Actividades Reguladas</h4>
+                        <ul class="areas-practica__card-list">
+                            <li>Servicios públicos</li>
+                            <li>Actividades en competencia</li>
+                            <li>Obra pública</li>
+                            <li>Concesiones</li>
+                            <li>Iniciativas privadas</li>
+                            <li>Contratos de participación público privada</li>
+                        </ul>
                     </div>
                     <!-- Areas -->
                     <div class="areas-practica__card">
-                        <div class="areas-practica__card--frente">
-                            <h4>defensa del consumidor</h4>
-                        </div>
-                        <div class="areas-practica__card--reverso">
-                            <ul>
-                                <li>reclamos ante autoridades de defensa del consumidor</li>
-                                <li>procesos colectivos</li>
-                            </ul>
-                        </div>
+                        <h4 class="areas-practica__card-title">defensa del consumidor</h4>
+                        <ul class="areas-practica__card-list">
+                            <li>Reclamos ante autoridades de defensa del consumidor</li>
+                            <li>Procesos colectivos</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
     </main>
-        
-    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+        
 </body>
 
 </html>

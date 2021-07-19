@@ -1,54 +1,30 @@
-.areas-practica {
+@use '../general/colors' as *;
 
-    // Load Animation
-    @for $cardNumber from 1 through 10 {
-        .areas-practica__card:nth-child(#{$cardNumber}) {
-            animation: fadeInUp 1s $cardNumber/4+s forwards;
-        }
-    }
+.areas-practica {
+    height: 100%;
 
     &__grid {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(2, 150px);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 30%);
         gap: 20px;
+        height: 100%;
     }
 
     &__card {
-        position: relative;
-        opacity: 0;
-        width: 100%; height: 100%;
-        background-color: #DBD084;
-        box-shadow: 2px 2px 10px rgba(black, .3);
-        border-radius: 5px;
-
-        &--frente,
-        &--reverso {
-            position: absolute; top: 0; right: 0; bottom: 0; left: 0;
-            display: grid; place-items: center; 
-        }
-
-        &--frente {
-            opacity: 1;
-
-            h4 {
-                text-align: center;
-            }
-        }
-        
-        &--reverso {
-            opacity: 0;
-        }
-
-        &:hover {
-
-            .areas-practica__card--frente {
-                opacity: 0;
-            }
-
-            .areas-practica__card--reverso {
-                opacity: 1;
-            }
-        }
+        display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center;
     }
+
+    &__card-title {
+        max-width: 200px;
+        color: $gold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__card-list {
+        width: 100%;
+        color: white;
+        list-style: disc;
+    }   
 }
